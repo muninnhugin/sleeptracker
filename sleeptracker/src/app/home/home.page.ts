@@ -9,7 +9,7 @@ import { OvernightSleepData } from '../data/overnight-sleep-data';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit{
-  toastDuration = 4000;
+  toastDuration = 5000;
   sleepTime:SleepData | null;
   wakeTime:SleepData | null;
   sleepBtn:HTMLElement | null;
