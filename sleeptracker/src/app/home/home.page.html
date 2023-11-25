@@ -4,7 +4,8 @@
 <ion-content [fullscreen]="true">
   <div id="page">
     <div id="title">Sleep Tracker</div>
-    <ion-button class="sleep_log_btn" shape="round" color="dark">Going to Bed</ion-button>
+    <ion-button id="sleep_btn" shape="round" color="dark" (click)="logSleep()">Going to Bed</ion-button>
+    <ion-button id="wake_btn" shape="round" color="dark" (click)="logWake()">Waking Up</ion-button>
   </div>
 </ion-content>
 
