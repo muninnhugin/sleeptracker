@@ -10,8 +10,8 @@
     <ion-button id="sleep_btn" shape="round" color="dark" (click)="logSleep()">Going to Bed</ion-button>
     <ion-button id="wake_btn" shape="round" color="dark" (click)="logWake()">Waking Up</ion-button>
   </div>
-  <ion-toast trigger="sleep_btn" message="Logging bedtime successful." [duration]=toastDuration position="top" [buttons]="[undoSleepBtn, dismissBtn]"></ion-toast>
-  <ion-toast trigger="wake_btn" message="Logging wakeup time successful." [duration]=toastDuration position="top" [buttons]="[undoWakeBtn, dismissBtn]"></ion-toast>
+  <ion-toast trigger="sleep_btn" message="Sleep time logged." [duration]=toastDuration position="top" [buttons]="[undoSleepBtn, dismissBtn]"></ion-toast>
+  <ion-toast trigger="wake_btn" message="Wakeup time logged." [duration]=toastDuration position="top" [buttons]="[undoWakeBtn, dismissBtn]"></ion-toast>
 </ion-content>
 
 <ion-footer>
