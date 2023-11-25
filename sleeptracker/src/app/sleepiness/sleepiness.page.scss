@@ -1,0 +1,38 @@
+ion-header {
+  display: none;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#title {
+  font-size: 8vw;
+}
+
+ion-range {
+  width: 80%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#sleepiness-description {
+  height: 2vw;
+}
+
+@media (orientation: landscape) {
+  #title {
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (orientation: portrait) {
+  #title {
+    margin-top: 50%;
+    margin-bottom: 40%;
+  }
+}
