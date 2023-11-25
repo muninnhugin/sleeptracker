@@ -25,7 +25,6 @@ export class HomePage implements OnInit{
 	}
 
 	ngOnInit() {
-		console.log(this.allSleepData);
     this.sleepBtn = document.getElementById('sleep_btn');
     this.wakeBtn = document.getElementById('wake_btn');
     if(this.wakeBtn != null) this.wakeBtn.style.display = 'none';
