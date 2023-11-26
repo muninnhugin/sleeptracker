@@ -1,7 +1,7 @@
 import {Component, inject, OnInit} from '@angular/core';
-import { SleepService } from '../services/sleep.service';
-import { SleepData } from '../data/sleep-data';
-import { OvernightSleepData } from '../data/overnight-sleep-data';
+import { SleepService } from '../../services/sleep.service';
+import { SleepData } from '../../data/sleep-data';
+import { OvernightSleepData } from '../../data/overnight-sleep-data';
 
 @Component({
   selector: 'app-home',

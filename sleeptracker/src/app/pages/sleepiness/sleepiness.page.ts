@@ -1,7 +1,7 @@
 import {Component, inject, OnInit} from '@angular/core';
-import {StanfordSleepinessData} from "../data/stanford-sleepiness-data";
+import {StanfordSleepinessData} from "../../data/stanford-sleepiness-data";
 import {RangeCustomEvent} from "@ionic/angular";
-import {SleepService} from "../services/sleep.service";
+import {SleepService} from "../../services/sleep.service";
 
 @Component({
   selector: 'app-sleepiness',
