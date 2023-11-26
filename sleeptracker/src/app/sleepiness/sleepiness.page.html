@@ -8,7 +8,7 @@
   <div id="page">
     <div id="title">Sleepiness Tracker</div>
     <div id="sleepiness-description"></div>
-    <ion-range id="sleepiness-range" [ticks]="true" [snaps]="true" [min]="1" [max]="7" color="dark" aria-label="Sleepiness" [pin]="true" (ionInput)="describeSleepiness($event)"></ion-range>
+    <ion-range id="sleepiness-range" [ticks]="true" [snaps]="true" [min]="1" [max]="7" color="dark" aria-label="Sleepiness" [pin]="true" (ionInput)="describeSleepiness($event)" (ionChange)="getSleepiness($event)"></ion-range>
     <ion-button id="submitBtn" color="dark">Submit</ion-button>
   </div>
 </ion-content>
