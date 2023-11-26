@@ -12,9 +12,11 @@ import {SleepData} from "../data/sleep-data";
 export class SleepinessPage implements OnInit {
   sleepinessRating: number | null;
   sleepService = inject(SleepService)
+  description: HTMLElement | null;
 
   constructor() {
     this.sleepinessRating = null;
+    this.description = null;
   }
 
   ngOnInit() {
@@ -22,12 +24,12 @@ export class SleepinessPage implements OnInit {
     if(submitBtn != null) submitBtn.addEventListener('click', this.logSleepiness)
   }
 
-  describeSleepiness(event:Event) {
-    let description = document.getElementById('sleepiness-description');
-    if(description == null) return;
+  describeSleepiness = (event:Event) => {
+    this.description = document.getElementById('sleepiness-description');
+    if(this.description == null) return;
     let sleepinessRating = (event as RangeCustomEvent).detail.value;
     if(typeof sleepinessRating == "number")
-      description.innerText = <string>StanfordSleepinessData.ScaleValues[sleepinessRating];
+      this.description.innerText = <string>StanfordSleepinessData.ScaleValues[sleepinessRating];
   }
 
   getSleepiness = (event:Event) => {
@@ -37,7 +39,11 @@ export class SleepinessPage implements OnInit {
   }
 
   logSleepiness = () => {
-    if(this.sleepinessRating != null) this.sleepService.logSleepinessData(new StanfordSleepinessData(this.sleepinessRating));
+    if(this.sleepinessRating != null) {
+      this.sleepService.logSleepinessData(new StanfordSleepinessData(this.sleepinessRating));
+      if(this.description != null) this.description.innerText = '';
+    }
+    else console.error('Data null, sleepiness not logged.')
   }
 }
 
