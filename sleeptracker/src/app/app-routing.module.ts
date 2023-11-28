@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'sleepiness',
     loadChildren: () => import('./pages/sleepiness/sleepiness.module').then(m => m.SleepinessPageModule)
   },
+  {
+    path: 'settings',
+    loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsPageModule)
+  },
 ];
 
 @NgModule({
