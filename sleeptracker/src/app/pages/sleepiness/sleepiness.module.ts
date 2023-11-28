@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SleepinessPageRoutingModule } from './sleepiness-routing.module';
 
 import { SleepinessPage } from './sleepiness.page';
+import { MenuModule } from 'src/app/menu/menu.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SleepinessPageRoutingModule
+    SleepinessPageRoutingModule,
+    MenuModule
   ],
   declarations: [SleepinessPage]
 })

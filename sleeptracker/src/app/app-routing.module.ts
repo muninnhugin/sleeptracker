@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
+import { HomePage } from './pages/home/home.page';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
-  },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },
   {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
+  },
+  {
     path: 'sleepiness',
     loadChildren: () => import('./pages/sleepiness/sleepiness.module').then(m => m.SleepinessPageModule)
+  },
+  {
+    path: 'log',
+    loadChildren: () => import('./pages/log/log.module').then(m => m.LogPageModule)
   },
 ];
 
