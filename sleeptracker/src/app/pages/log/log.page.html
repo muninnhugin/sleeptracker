@@ -1,13 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>log</ion-title>
-  </ion-toolbar>
+<ion-header>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">log</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <ion-toolbar>
+    <ion-segment value="sleep_time" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
+      <ion-segment-button value="sleep_time">
+        <ion-label>Sleep Time</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="sleepiness">
+        <ion-label>Sleepiness</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <div [ngSwitch]="type">
+    <ion-list *ngSwitchCase="'sleep_time'">
+      <ion-card *ngFor="let time of overnightData">
+        <ion-card-header>
+          <ion-card-title>{{time.summaryString()}}</ion-card-title>
+          <ion-card-subtitle>{{time.dateString()}}</ion-card-subtitle>
+        </ion-card-header>
+        <!-- <ion-card-content>
+          Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content> -->
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'sleepiness'">
+      <ion-card *ngFor="let item of sleepinessData">
+        <ion-card-header>
+          <ion-card-title>{{item.getLoggedValue}}</ion-card-title>
+          <ion-card-subtitle>{{item.dateString()}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          {{item.summaryString()}}
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
 </ion-content>
+
+<app-menu></app-menu>
+
+
+<!-- <div [ngSwitch]="type">
+  <ion-list *ngSwitchCase="'deposit'">
+    <ion-item *ngFor="let item of [].constructor(20); let i = index">
+      <ion-thumbnail slot="start">
+        <img src="https://avatars.io/instagram/unknown">
+      </ion-thumbnail>
+      <h6>Deposit - {{ i }}</h6>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'loan'">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://avatars.io/instagram/unknown">
+      </ion-thumbnail>
+      <h6>Loan 2</h6>
+    </ion-item>
+  </ion-list>
+</div> -->

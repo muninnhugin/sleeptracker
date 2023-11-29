@@ -24,4 +24,8 @@ export class StanfordSleepinessData extends SleepData {
 	override summaryString():string {
 		return this.loggedValue + ": " + StanfordSleepinessData.ScaleValues[this.loggedValue];
 	}
+
+	get getLoggedValue():number {
+		return this.loggedValue;
+	}
 }
