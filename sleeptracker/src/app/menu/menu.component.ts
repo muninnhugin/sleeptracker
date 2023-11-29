@@ -24,4 +24,8 @@ export class MenuComponent  implements OnInit {
     this.router.navigate(['/log']);
   }
 
+  settings():void {
+    this.router.navigate(['/settings']);
+  }
+
 }

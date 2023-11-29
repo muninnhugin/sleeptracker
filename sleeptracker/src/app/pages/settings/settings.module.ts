@@ -8,12 +8,15 @@ import { SettingsPageRoutingModule } from './settings-routing.module';
 
 import { SettingsPage } from './settings.page';
 
+import { MenuModule } from 'src/app/menu/menu.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SettingsPageRoutingModule
+    SettingsPageRoutingModule,
+    MenuModule
   ],
   declarations: [SettingsPage]
 })
