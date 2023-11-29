@@ -1,4 +1,4 @@
---Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
+--Readme document for *Rongbing Lai and Ha Bach*, *rongbil1@uci.edu, *, *69071949, *--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
@@ -13,7 +13,7 @@
 
 2. How long, in hours, did it take you to complete this assignment?
 Ha: 16 hours
-Crystal: 10 hours
+Rongbing: 10 hours
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 https://edupala.com/ionic-segment-example/
