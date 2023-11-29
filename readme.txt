@@ -3,30 +3,32 @@
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */20
-- */3 The ability to log overnight sleep
-- */3 The ability to log sleepiness during the day
-- */3 The ability to view these two categories of logged data
-- */3 Either using a native device resource or backing up logged data
-- */3 Following good principles of mobile design
-- */3 Creating a compelling app
-- */2 A readme and demo video which explains how these features were implemented and their design rationale
+- 3/3 The ability to log overnight sleep
+- 3/3 The ability to log sleepiness during the day
+- 3/3 The ability to view these two categories of logged data
+- 3/3 Either using a native device resource or backing up logged data
+- 3/3 Following good principles of mobile design
+- 3/3 Creating a compelling app
+- 2/2 A readme and demo video which explains how these features were implemented and their design rationale
 
 2. How long, in hours, did it take you to complete this assignment?
-
+Ha: 16 hours
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 https://edupala.com/ionic-segment-example/
 https://ionicacademy.com/ionic-routing-navigation/
 https://ionicframework.com/docs/components
+https://ionicframework.com/docs/native/local-notifications
+https://ionicframework.com/docs/angular/your-first-app/deploying-mobile
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+Questions and answers and Slack
 
 
 5. Is there anything special we need to know in order to run your code?
-
-
+install extra capacitor plug ins with npm install
+can launch Android app via ionic capacitor
 
 --Aim for no more than two sentences for each of the following questions.--
 
