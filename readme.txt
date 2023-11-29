@@ -2,7 +2,7 @@
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/20
+20/20
 - 3/3 The ability to log overnight sleep
 - 3/3 The ability to log sleepiness during the day
 - 3/3 The ability to view these two categories of logged data
@@ -13,7 +13,7 @@
 
 2. How long, in hours, did it take you to complete this assignment?
 Ha: 16 hours
-
+Crystal: 10 hours
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 https://edupala.com/ionic-segment-example/
@@ -42,16 +42,16 @@ can launch Android app via ionic capacitor
 
 
 8. How can a person log overnight sleep in your app? Why did you choose to support logging overnight sleep in this way?
-
-
+A person can press the "Going to bed" button on the Sleep Timer page to start logging overnight sleep. When they wake up, they can
+press the "Waking up" button to stop logging. The time will be recorded to the sleep logs.
 
 9. How can a person log sleepiness during the day in your app? Why did you choose to support logging sleepiness in this way?
-
-
+A person can go to the sleepiness page and choose a scale for their sleepiness on the scale. By pressing the submit button, their
+sleepiness will be logged.
 
 10. How can a person view the data they logged in your app? Why did you choose to support viewing logged data in this way?
-
-
+A person can view the data they logged in the sleep log page. There are two segments, one for sleepiness log and one for overnight time log.
+I put them into one page because it is easier for users to check all the logs. Users can switch between sleppiness and overnight.
 
 11. Which feature choose--using a native device resource, backing up logged data, or both?
 
@@ -65,4 +65,6 @@ can launch Android app via ionic capacitor
 
 
 14. How does your app implement or follow principles of good mobile design?
-
+1. There is an "uh-oh" button for logging the overnight sleep in the alert message after pressing the "Going to sleep" and "Waking up" button
+2. There is a navigation bar at the bottom for users to navigate between different pages
+3. Follows platform conventions with appropriate icons, widgets, and button positions
