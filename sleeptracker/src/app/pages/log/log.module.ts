@@ -8,15 +8,13 @@ import { LogPageRoutingModule } from './log-routing.module';
 
 import { LogPage } from './log.page';
 
-import { MenuModule } from 'src/app/menu/menu.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LogPageRoutingModule,
-    MenuModule
+    LogPageRoutingModule
   ],
   declarations: [LogPage]
 })
