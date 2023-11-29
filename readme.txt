@@ -16,8 +16,9 @@
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
-
-
+https://edupala.com/ionic-segment-example/
+https://ionicacademy.com/ionic-routing-navigation/
+https://ionicframework.com/docs/components
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
