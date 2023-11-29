@@ -10,5 +10,16 @@
       <ion-title size="large">Settings</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button id='notifications_btn' color="dark" (click)="scheduleNotification()">Schedule Notification</ion-button>
+  <ion-button id='notifications_btn' color="dark">Schedule Notification</ion-button>
+
+  <ion-modal class="modal-wrapper" trigger="notifications_btn">
+    <ng-template id="time_template">
+      <ion-datetime id='notification_time' presentation="time" size="cover">
+        <ion-buttons slot="buttons">
+          <ion-button color="primary" (click)="scheduleNotification()">Schedule</ion-button>
+        </ion-buttons>
+      </ion-datetime>
+    </ng-template>
+  </ion-modal>
+
 </ion-content>
