@@ -15,7 +15,8 @@ export class SettingsPage implements OnInit {
 
   async scheduleNotification() {
     let time = await this.getScheduledTime();
-    console.log(time);
+    console.log(time?.getHours());
+    console.log(time?.getMinutes());
     if (time == undefined) return;
     await LocalNotifications.requestPermissions();
     await LocalNotifications.schedule({
@@ -27,6 +28,7 @@ export class SettingsPage implements OnInit {
           on: {
             hour: time.getHours(),
             minute: time.getMinutes(),
+            second: 0
           }
         }
       }]
