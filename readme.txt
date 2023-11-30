@@ -1,3 +1,6 @@
+************************ DEMO VIDEO ***********************************************************************
+https://github.com/uci-inf-133/a4-sleep-tracker-crysha-a4/blob/master/demo.mp4
+
 --Readme document for *Rongbing Lai and Ha Bach*, *rongbil1@uci.edu, bachh1@uci.edu*, *69071949, 14869914*
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
