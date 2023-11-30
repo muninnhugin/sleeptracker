@@ -1,4 +1,4 @@
---Readme document for *Rongbing Lai and Ha Bach*, *rongbil1@uci.edu, *, *69071949, *--
+--Readme document for *Rongbing Lai and Ha Bach*, *rongbil1@uci.edu, bachh1@uci.edu*, *69071949, 14869914*
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
@@ -27,18 +27,18 @@ Questions and answers and Slack
 
 
 5. Is there anything special we need to know in order to run your code?
-install extra capacitor plug ins with npm install
-can launch Android app via ionic capacitor
+Install extra capacitor plug ins with npm install
+Can launch Android app via ionic capacitor
 
 --Aim for no more than two sentences for each of the following questions.--
 
 
 6. Did you design your app with a particular type of user in mind? If so, whom?
-
+This app is designed for busy users who want a quick way to log their sleeping times and sleepiness during the day.
 
 
 7. Did you design your app specifically for iOS or Android, or both?
-
+This app is designed for both iOS and Android.
 
 
 8. How can a person log overnight sleep in your app? Why did you choose to support logging overnight sleep in this way?
@@ -54,15 +54,15 @@ A person can view the data they logged in the sleep log page. There are two segm
 I put them into one page because it is easier for users to check all the logs. Users can switch between sleppiness and overnight.
 
 11. Which feature choose--using a native device resource, backing up logged data, or both?
-
+We implemented a native device resource.
 
 
 12. If you used a native device resource, what feature did you add? How does this feature change the app's experience for a user?
-
+We added local notifications. The user can schedule daily notifications, which will remind them to log their sleeping time.
 
 
 13. If you backed up logged data, where does it back up to?
-
+N/A
 
 14. How does your app implement or follow principles of good mobile design?
 1. There is an "uh-oh" button for logging the overnight sleep in the alert message after pressing the "Going to sleep" and "Waking up" button
